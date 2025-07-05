@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewwport" content="width=device-width">
+        <link rel="stylesheet" href="projects.css">
+        <title>Projects</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="first">
+                <image src="../images/logo.png" class="logo-img"></image>
+                <div class="navs" id="home">Home</div>
+                <div class="navs" id="about">About</div>
+            </div>
+            <div class="last">
+                <button class="github" id="github">GitHub</button>
+                <button class="insta" id="insta">Instagram</button>
+                <button class="linkedin" id="linkedin">Linkedin</button>
+            </div>
+        </div>
+        <div class="hero-header">
+            <div class="heading">Projects</div>
+            <div class="head-info">
+                A curated showcase of what I’ve built—each line of code a step in my learning and growth.
+            </div>
+            <div class="buttons">
+                <button class="work" id="web">Web</button>
+                <button class="resume" id="ml">ML</button>
+            </div>
+        </div>
+        <div class="web-section" id = 'ws'>
+            <div class="web-heading">Mini Web Projects</div>
+            <div class="web-info">A collection of lightweight web apps and components built to practice and polish my frontend skills.</div>
+            <div class="web-visible">
+                <div class="card" id="p1">
+                    <image src="pro-images/pro-1.png" class="pro-image"></image>
+                    <div class="pro-heading">Emotion Tracker</div>
+                    <div class="pro-info">A simple web app to log and track daily emotions.
+                        Built to help users reflect on their mood patterns over time.
+                    </div>
+                </div>
+                <div class="card" id="p2">    
+                    <image src="pro-images/pro-2.png" class="pro-image"></image>
+                    <div class="pro-heading">Rock paper Scissors</div>
+                    <div class="pro-info">
+                        A classic Rock-Paper-Scissors game built with HTML, CSS, and JavaScript.
+                        Play against the computer and see who wins each round!
+                    </div>
+                </div>
+            </div>
+            <div class="web-invisible">
+                <div class="row">
+                    <div class="card" id="p3">
+                        <image src="pro-images/pro-3.png" class="pro-image"></image>
+                        <div class="pro-heading">Calculator</div>                        
+                        <div class="pro-info">
+                            A clean, responsive calculator built with HTML, CSS, and JavaScript.
+                            Performs basic arithmetic operations with smooth button interaction.
+                        </div>
+                    </div>
+                    <div class="card" id="p4">
+                        <image src="pro-images/pro-4.png" class="pro-image"></image>
+                        <div class="pro-heading">Budget Tracker</div>
+                        <div class="pro-info">
+                           A simple web app to track income and expenses in real time.
+                            Helps users stay organized and manage their budget effectively.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card" id="p5">
+                        <image src="pro-images/pro-5.png" class="pro-image"></image>
+                        <div class="pro-heading">Hydrate Alarm</div>
+                        <div class="pro-info">
+                           A simple web-based alarm that reminds users to drink water regularly.
+                            Built to promote healthy hydration habits through timed alerts.
+                        </div>
+                    </div>
+                    <div class="card" id="p6">
+                        <image src="pro-images/pro-6.png" class="pro-image"></image>
+                        <div class="pro-heading">Todo List</div>
+                        <div class="pro-info">
+                           A minimalist to-do list app to help users organize daily tasks.
+                            Features task addition, deletion, and completion tracking using local storage.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card" id="p7">
+                        <image src="pro-images/pro-7.png" class="pro-image"></image>
+                        <div class="pro-heading">My Personal Website</div>
+                        <div class="pro-info">
+                           A fully responsive personal portfolio website to showcase my skills, projects, and journey.
+                            Built with HTML, CSS, and JavaScript to reflect both creativity and code.
+                        </div>
+                    </div>
+                    <div class="card" id="p8">
+                        <image src="pro-images/pro-8.png" class="pro-image"></image>
+                        <div class="pro-heading">Youtube Clone</div>
+                        <div class="pro-info">
+                           A static clone of the YouTube homepage built with only HTML and CSS.
+                            Recreated layout, thumbnails, sidebar, and header for pixel-perfect practice.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card" id="p9">
+                        <image src="pro-images/pro-9.png" class="pro-image"></image>
+                        <div class="pro-heading">Focus Timer</div>
+                        <div class="pro-info">
+                          A simple focus timer app to help users work in distraction-free intervals.
+                          Built using HTML, CSS, and JavaScript with customizable countdown sessions.
+                        </div>
+                    </div>
+                    <div class="card" id="p10">
+                        <image src="pro-images/pro-10.png" class="pro-image"></image>
+                        <div class="pro-heading">Text Analyzer</div>
+                        <div class="pro-info">
+                          This tool helps users analyze their text by providing key stats like word and character count.
+                        Ideal for writing, editing, and staying within limits.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ml-section" id="ms">
+            <div class="ml-heading">Machine Learning Projects</div>
+            <div class="ml-info">A collection of experiments and models—from linear regression to multivariate predictions—built to deepen my understanding of AI.
+                <button class="ml-git" id="ml-git">Click here to view</button>
+            </div>
+        </div>
+        <div class="team-section">
+            <div class="team-heading">Smart sort: waste classifier</div>
+            <div class="team-info">
+                A machine learning–based web app to classify waste as dry or wet using image inputs.
+                Built as a collaborative project with my team, focusing on sustainability through AI.
+            </div>
+            <image src="pro-images/pro-11.png" class="team-img"></image>
+            <div class="team-det">
+                Smart Sort is an AI-powered web application designed to classify waste as dry or wet using image inputs. Built as a team project, our goal was to promote sustainable waste management by automating the initial sorting process. We used a convolutional neural network (CNN) trained on a curated dataset (TrashNet + RealWaste) and implemented the model using TensorFlow.<br><br>
+
+                The frontend, built with HTML, CSS, and JavaScript, allows users to upload waste images through an intuitive UI. Once submitted, the image is analyzed by the backend, and the classification result is displayed in real time. The model was integrated into the app using Flask for the backend and REST API calls.<br><br>
+
+                As a team, we divided responsibilities across model development, data preprocessing, UI design, and deployment. Our collaborative workflow included version control through GitHub, and we followed agile practices to ensure weekly progress and testing.<br>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="f-first">
+                <image src="../images/logo.png" class="f-logo-img"></image>
+            </div>
+            <div class="f-second">
+                <div class="f-top">Quick Links</div>
+                <div class="f-bottom">
+                    <div class="f-links" id="home-f">Home</div>
+                    <div class="f-links" id="about-f">about</div>
+                    <a href="mailto:attadaritika@gmail.com?" class="a">
+                        <div class="f-links">Email</div>
+                    </a>
+                </div>
+            </div>
+            <div class="f-second">
+                <div class="f-top">Stay Connected</div>
+                <div class="f-bottom">
+                    <div class="f-links" id="linkedin-f">Linkedin</div>
+                    <div class="f-links" id="github-f">Github</div>
+                    <div class="f-links" id="insta-f">Instagram</div>
+                </div>
+            </div>
+        </div>
+        <script src="projects.js"></script>
+    </body>
+</html>
