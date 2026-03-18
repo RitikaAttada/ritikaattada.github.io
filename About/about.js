@@ -1,48 +1,30 @@
-const home = document.getElementById('home');
-const home_f = document.getElementById('home-f');
-const projects = document.getElementById('projects');
-const projects_f = document.getElementById('projects-f');
-const github = document.getElementById('github');
-const github_f = document.getElementById('github-f');
-const insta = document.getElementById('insta');
-const insta_f = document.getElementById('insta-f');
-const linkedin = document.getElementById('linkedin');
-const linkedin_f = document.getElementById('linkedin-f');
-const linkedin_connect = document.getElementById('linkedin-connect');
+function on(id, fn) {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', fn);
+}
 
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navMenu.classList.toggle('open');
+});
+function closeMenu() {
+    hamburger.classList.remove('open');
+    navMenu.classList.remove('open');
+}
 
-home.addEventListener('click', ()=>{
-    window.close();
-    window.open("../index.html") ;
-});
-home_f.addEventListener('click', ()=>{
-    window.close();
-    window.open("../index.html") ;
-});
-projects.addEventListener('click', ()=>{
-    window.close();
-    window.open("../Projects/projects.html");
-});
-projects_f.addEventListener('click', ()=>{
-    window.close();
-    window.open("../Projects/projects.html");
-});
-insta.addEventListener('click', ()=>{
-    window.open('https://www.instagram.com/ritika_attada/');
-});
-insta_f.addEventListener('click', ()=>{
-    window.open('https://www.instagram.com/ritika_attada/');
-});
-linkedin.addEventListener('click', ()=>{
-    window.open("https://www.linkedin.com/in/ritika-attada-5078162a5/");
-});
-linkedin_f.addEventListener('click', ()=>{
-    window.open("https://www.linkedin.com/in/ritika-attada-5078162a5/");
-});
-github.addEventListener('click', ()=>{
-    window.open("https://www.github.com/ritikaattada");
-});
-github_f.addEventListener('click', ()=>{
-    window.open("https://www.github.com/ritikaattada");
-});
+on('home',       () => { window.location.href = '../index.html'; closeMenu(); });
+on('projects',   () => { window.open('../Projects/projects.html'); closeMenu(); });
+on('home-f',     () => window.location.href = '../index.html');
+on('projects-f', () => window.open('../Projects/projects.html'));
 
+on('github',   () => { window.open('https://www.github.com/ritikaattada'); closeMenu(); });
+on('github-f', () => window.open('https://www.github.com/ritikaattada'));
+on('insta',    () => { window.open('https://www.instagram.com/ritika_attada/'); closeMenu(); });
+on('insta-f',  () => window.open('https://www.instagram.com/ritika_attada/'));
+on('linkedin',   () => { window.open('https://www.linkedin.com/in/ritika-attada-5078162a5/'); closeMenu(); });
+on('linkedin-f', () => window.open('https://www.linkedin.com/in/ritika-attada-5078162a5/'));
+
+on('follow',     () => window.open('https://www.github.com/ritikaattada'));
+on('view_more',  () => window.open('../Projects/projects.html'));
