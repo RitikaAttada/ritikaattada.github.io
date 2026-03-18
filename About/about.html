@@ -4,48 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ABOUT</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="about.css"> 
     </head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BVZE8C56WG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-BVZE8C56WG');
-    </script>
     <body>
         <div class="navbar">
             <div class="first">
-                <image src="../images/logo.png" class="logo-img"></image>
+                <img src="../images/logo.png" class="logo-img" alt="Logo">
                 <div class="navs" id="home">Home</div>
                 <div class="navs" id="projects">Projects</div>
             </div>
-            <div class="last">
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="last" id="nav-menu">
                 <button class="github" id="github">GitHub</button>
                 <button class="insta" id="insta">Instagram</button>
-                <button class="linkedin" id="linkedin">Linkedin</button>
+                <button class="linkedin" id="linkedin">LinkedIn</button>
             </div>
         </div>
+
         <div class="hero-header">
             <div class="heading">Hello, I'm <span style="color:#7a8572;">Ritika Attada</span></div>
-            <div class="head-info">  I'm an aspiring software developer with a love for clean design and purposeful code.
-                Currently pursuing my B. Tech at Gayatri Vidya Parishad College of Engineering, I’m on a journey to master full-stack development and machine learning. I love turning challenges into learning opportunities. I'm also exploring app development using Kotlin and diving into DSA with C++ to strengthen my core skills.
+            <div class="head-info">I'm an aspiring software developer with a love for clean design and purposeful code.
+                Currently pursuing my B.Tech at Gayatri Vidya Parishad College of Engineering, I'm on a journey to master full stack development and machine learning. I love turning challenges into learning opportunities. I'm also exploring app development using Kotlin and diving into DSA with C++ to strengthen my core skills.
             </div>
         </div>
+
         <div class="info-1">
             <div class="info-left">
                 <div class="info-left-heading">Discover My <span style="color:#7a8572;">Journey</span> In Tech</div>
                 <div class="info-left-info">
-                      I'm a tech enthusiast passionate about building and designing digital experiences. 
-                        My journey blends full-stack development, Machine Learning, and a love for clean, functional design. 
-                        I'm constantly learning, experimenting, and turning ideas into interactive projects. 
+                    I'm a tech enthusiast passionate about building and designing digital experiences.
+                    My journey blends full stack development, Machine Learning, and a love for clean, functional design.
+                    I'm constantly learning, experimenting, and turning ideas into interactive projects.
                 </div>
-                <button class="follow"> Follow my github</button>
+                <button class="follow" id="follow">Follow my GitHub</button>
             </div>
-            <image src="../images/image3.jpg" class="info-img"></image>
+            <img src="../images/image3.jpg" class="info-img" alt="Ritika">
         </div>
+
         <div class="stats">
             <div class="stats-head">Key <span style="color:#7a8572;">Statistics</span> Showcasing My Journey as a Developer</div>
             <div class="stats-right">
@@ -59,54 +57,57 @@
                     </div>
                     <div class="stat">
                         <div class="stat-num">4</div>
-                        <div class="stat-info">	Programming languages learned</div>
+                        <div class="stat-info">Programming languages learned</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-num">300+</div>
-                        <div class="stat-info">	Problems solved on LeetCode</div>
+                        <div class="stat-num">52</div>
+                        <div class="stat-info">Problems solved on LeetCode</div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="explore">
             <div class="explore-head">Current Areas of Focus</div>
-            <div class="explore-info">Delving into full-stack development, Machine Learning, and DSA.</div>
+            <div class="explore-info">Delving into full stack development, Machine Learning, and DSA.</div>
             <div class="explore-board">
                 <div class="explore-container">
-                    <image src="explore-logo.png" class="cont-logo"></image>
+                    <img src="explore-logo.png" class="cont-logo" alt="DSA">
                     <div class="cont-heading">Exploring DSA</div>
                     <div class="cont-info">Focusing on core data structures and algorithms using C++ to enhance problem-solving skills</div>
                 </div>
                 <div class="explore-container">
-                    <image src="dev-logo.png" class="cont-logo"></image>
-                    <div class="cont-heading">Full Stack development</div>
+                    <img src="dev-logo.png" class="cont-logo" alt="Dev">
+                    <div class="cont-heading">Full Stack Development</div>
                     <div class="cont-info">Learning to build responsive web applications using HTML, CSS, and JavaScript.</div>
                 </div>
                 <div class="explore-container">
-                    <image src="ml-logo.png" class="cont-logo"></image>
+                    <img src="ml-logo.png" class="cont-logo" alt="ML">
                     <div class="cont-heading">Exploring Machine Learning</div>
                     <div class="cont-info">Exploring machine learning fundamentals using Python and real-world datasets</div>
                 </div>
             </div>
         </div>
+
         <div class="projects">
             <div class="projects-left">
                 <div class="projects-head">Explore My Latest Projects</div>
                 <div class="projects-info">A collection of hands-on projects showcasing my learning in web development and machine learning.</div>
-                <button class="view_more">view more</button>
+                <button class="view_more" id="view_more">View more</button>
             </div>
-            <image src="../images/project-image1.png" class="project-img"></image>
+            <img src="../images/project-image1.png" class="project-img" alt="Project">
         </div>
+
         <div class="footer">
             <div class="f-first">
-                <image src="../images/logo.png" class="f-logo-img"></image>
+                <img src="../images/logo.png" class="f-logo-img" alt="Logo">
             </div>
             <div class="f-second">
                 <div class="f-top">Quick Links</div>
                 <div class="f-bottom">
                     <div class="f-links" id="home-f">Home</div>
                     <div class="f-links" id="projects-f">Projects</div>
-                    <a href="mailto:attadaritika@gmail.com?" class="a">
+                    <a href="mailto:attadaritika@gmail.com" class="a">
                         <div class="f-links">Email</div>
                     </a>
                 </div>
@@ -114,8 +115,8 @@
             <div class="f-second">
                 <div class="f-top">Stay Connected</div>
                 <div class="f-bottom">
-                    <div class="f-links" id="linkedin-f">Linkedin</div>
-                    <div class="f-links" id="github-f">Github</div>
+                    <div class="f-links" id="linkedin-f">LinkedIn</div>
+                    <div class="f-links" id="github-f">GitHub</div>
                     <div class="f-links" id="insta-f">Instagram</div>
                 </div>
             </div>
@@ -123,4 +124,3 @@
         <script src="about.js"></script>
     </body>
 </html>
-
