@@ -79,13 +79,13 @@ a { text-decoration: none; }
 
 /* LeetCode nav button — orange tint */
 .navbar .last .leetcode-btn {
-  background-color: #b85c00;
-  color: #fff;
+  background-color: #eae7dc;
+  color: #4a4a4a;
 }
 .navbar .last .leetcode-btn:hover {
-  background-color: #eae7dc;
-  color: #b85c00;
-  border-color: #b85c00;
+  background-color: #4a4a4a;
+  color: #eae7dc;
+  border-color: #eae7dc;
 }
 
 /* Hamburger (hidden on desktop) */
