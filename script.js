@@ -1,81 +1,57 @@
-const home = document.getElementById('home');
-const home_f = document.getElementById('home-f');
-const about = document.getElementById('about');
-const about_f = document.getElementById('about-f');
-const skills = document.getElementById('skills');
-const skills_f = document.getElementById('skills-f');
-const projects = document.getElementById('projects');
-const projects_f = document.getElementById('projects-f');
-const github = document.getElementById('github');
-const github_f = document.getElementById('github-f');
-const insta = document.getElementById('insta');
-const insta_f = document.getElementById('insta-f');
-const linkedin = document.getElementById('linkedin');
-const linkedin_f = document.getElementById('linkedin-f');
-const linkedin_connect = document.getElementById('linkedin-connect');
-const home_section = document.getElementById('home-section');
-const about_section = document.getElementById('about-section');
-const skills_section = document.getElementById('skills-section');
-const projects_section = document.getElementById('projects-section');
-const resume = document.getElementById('resume');
-const learn = document.getElementById('learn');
-const work = document.getElementById('work');
-const view = document.getElementById('view');
+// Helper — safely get element and add listener (prevents null crash)
+function on(id, fn) {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', fn);
+}
 
-home.addEventListener('click', ()=>{
-    home_section.scrollIntoView({behavior: 'smooth'});
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const navMenu   = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navMenu.classList.toggle('open');
 });
-home_f.addEventListener('click', ()=>{
-    home_section.scrollIntoView({behavior: 'smooth'});
-});
-about.addEventListener('click', ()=>{
-   about_section.scrollIntoView({behavior: 'smooth'});
-});
-about_f.addEventListener('click', ()=>{
-    window.open('/About/about.html');
-});
-skills.addEventListener('click', ()=>{
-    skills_section.scrollIntoView({behavior: 'smooth'});
-});
-skills_f.addEventListener('click', ()=>{
-    skills_section.scrollIntoView({behavior: 'smooth'});
-});
-projects.addEventListener('click', ()=>{
-   window.open("/Projects/projects.html");
-});
-projects_f.addEventListener('click', ()=>{
-    window.open("/Projects/projects.html");
-});
-insta.addEventListener('click', ()=>{
-    window.open('https://www.instagram.com/ritika_attada/');
-});
-insta_f.addEventListener('click', ()=>{
-    window.open('https://www.instagram.com/ritika_attada/');
-});
-linkedin.addEventListener('click', ()=>{
-    window.open("https://www.linkedin.com/in/ritika-attada-5078162a5/");
-});
-linkedin_f.addEventListener('click', ()=>{
-    window.open("https://www.linkedin.com/in/ritika-attada-5078162a5/");
-});
-linkedin_connect.addEventListener('click', ()=>{
-    window.open("https://www.linkedin.com/in/ritika-attada-5078162a5/");
-});
-github.addEventListener('click', ()=>{
-    window.open("https://www.github.com/ritikaattada");
-});
-github_f.addEventListener('click', ()=>{
-    window.open("https://www.github.com/ritikaattada");
-});
-work.addEventListener('click', ()=>{
-    window.open("/Projects/projects.html");
-});
-view.addEventListener('click', ()=>{
-    window.open("/Projects/projects.html");
-});
-resume.addEventListener('click', ()=>{
-    window.open("/resume/RITIKA ATTADA RESUME.pdf");
-});
-learn.addEventListener('click', ()=>{
-    window.open('/About/about.html');
-});
+
+function closeMenu() {
+    hamburger.classList.remove('open');
+    navMenu.classList.remove('open');
+}
+
+function scrollTo(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    closeMenu();
+}
+
+// --- Navbar & footer nav links ---
+on('home',       () => scrollTo('home-section'));
+on('home-f',     () => scrollTo('home-section'));
+
+on('about',      () => scrollTo('about-section'));
+on('about-f',    () => { window.open('About/about.html'); closeMenu(); });
+
+on('skills',     () => scrollTo('skills-section'));
+on('skills-f',   () => scrollTo('skills-section'));
+
+on('projects',   () => { window.open('Projects/projects.html'); closeMenu(); });
+on('projects-f', () => window.open('Projects/projects.html'));
+
+// --- Social buttons ---
+on('github',     () => { window.open('https://www.github.com/ritikaattada'); closeMenu(); });
+on('github-f',   () => window.open('https://www.github.com/ritikaattada'));
+
+on('linkedin',         () => { window.open('https://www.linkedin.com/in/ritika-attada-5078162a5/'); closeMenu(); });
+on('linkedin-f',       () => window.open('https://www.linkedin.com/in/ritika-attada-5078162a5/'));
+on('linkedin-connect', () => window.open('https://www.linkedin.com/in/ritika-attada-5078162a5/'));
+
+on('insta-f',    () => window.open('https://www.instagram.com/ritika_attada/'));
+
+on('leetcode-nav', () => { window.open('https://leetcode.com/u/Ritika_Attada2712/'); closeMenu(); });
+on('leetcode-f',   () => window.open('https://leetcode.com/u/Ritika_Attada2712/'));
+
+// --- Page buttons ---
+on('work',   () => window.open('Projects/projects.html'));
+on('view',   () => window.open('Projects/projects.html'));
+on('resume', () => window.open('resume/RITIKA ATTADA RESUME.pdf'));
+on('learn',  () => window.open('About/about.html'));
