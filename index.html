@@ -4,37 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RITIKA ATTADA</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css"> 
     </head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BVZE8C56WG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-BVZE8C56WG');
-    </script>
     <body>
         <div class="navbar">
             <div class="logo">
-                <image src="images/logo.png" class="logo-img"></image>
+                <img src="images/logo.png" class="logo-img" alt="Logo">
             </div>
-            <div class="last">
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="last" id="nav-menu">
                 <div class="navs" id="home">Home</div>
                 <div class="navs" id="about">About</div>
                 <div class="navs" id="skills">Skills</div>
                 <div class="navs" id="projects">Projects</div>
                 <button class="github" id="github">GitHub</button>
-                <button class="insta" id="insta">Instagram</button>
-                <button class="linkedin" id="linkedin">Linkedin</button>
+                <button class="leetcode-btn" id="leetcode-nav">LeetCode</button>
+                <button class="linkedin" id="linkedin">LinkedIn</button>
             </div>
         </div>
+
         <div class="hero-header" id="home-section">
             <div class="info-side">
                 <div class="heading">Exploring Ideas Through Code and <span style="color:#7a8572;">Curiosity</span></div>
                 <div class="info">
-                    Hi! I'm <span style="color:#5e6b56;">Ritika</span>, a dedicated Computer Science student with a passion for creating clean, meaningful, and<span style="color:#5e6b56;"> functional</span> digital experiences. My approach to development is rooted in simplicity, clarity, and <span style="color:#5e6b56;">thoughtful</span> design. This portfolio reflects the small steps, challenges, and <span style="color:#5e6b56">growth</span> that shape my journey in tech.
+                    Hi! I'm <span style="color:#5e6b56;">Ritika</span>, a dedicated Computer Science student with a passion for creating clean, meaningful, and <span style="color:#5e6b56;">functional</span> digital experiences. My approach to development is rooted in simplicity, clarity, and <span style="color:#5e6b56;">thoughtful</span> design. This portfolio reflects the small steps, challenges, and <span style="color:#5e6b56;">growth</span> that shape my journey in tech.
                 </div>
                 <div class="buttons">
                     <button class="work" id="work">Work</button>
@@ -43,7 +39,7 @@
             </div>
             <div class="image-side">
                 <div class="images-side">
-                    <image src="images/image2.jpg" class="image"></image>
+                    <img src="images/image2.jpg" class="image" alt="Ritika">
                     <div class="pic-info">
                         <div class="pic-heading">Quietly Creating, Constantly Growing</div>
                         <div class="pic-text">Each project reflects a step in my journey as a developer.</div>
@@ -51,24 +47,26 @@
                 </div>
             </div>
         </div>
+
         <div class="breif" id="about-section">
             <div class="breif-heading">Learning to build. Building to learn. <span style="color:#7a8572;">Growing</span> with every project.</div>
-            <div class="breif-info">As a Computer Science student who learns best by doing. Every project, no matter how small, teaches me something new — about code, design, or myself. I’m still exploring full-stack development and machine learning, one concept at a time, and this portfolio is where I share that ongoing journey. 
-                <br><button class="learn-more" id="learn">Learn more </button>
+            <div class="breif-info">As a Computer Science student who learns best by doing. Every project, no matter how small, teaches me something new — about code, design, or myself. I'm still exploring full-stack development and machine learning, one concept at a time, and this portfolio is where I share that ongoing journey.
+                <br><button class="learn-more" id="learn">Learn more</button>
             </div>
         </div>
+
         <div class="skills" id="skills-section">
             <div class="skills-heading">Technologies I <span style="color:#7a8572;">Use</span> and <span style="color:#7a8572;">Explore</span></div>
-            <div class="skills-info">I’m currently building my foundation in full-stack web development and exploring machine learning. I’ve worked with C, C++, Python, HTML, CSS, and JavaScript, and I’m learning tools like Git and TensorFlow through hands-on projects.</div>
+            <div class="skills-info">I'm currently building my foundation in full-stack web development and exploring machine learning. I've worked with C, C++, Python, HTML, CSS, and JavaScript, and I'm learning tools like Git and TensorFlow through hands-on projects.</div>
             <div class="skills-board">
                 <div class="skill-container">
                     <div class="skill-icon">🧠</div>
-                    <div class="skill-heading"> Languages I’ve Learned</div>
+                    <div class="skill-heading">Languages I've Learned</div>
                     <div class="skill-info">C, C++, Python, JavaScript, Java</div>
                 </div>
                 <div class="skill-container">
                     <div class="skill-icon">🧰</div>
-                    <div class="skill-heading">Tools and Frameworks I’m Exploring</div>
+                    <div class="skill-heading">Tools and Frameworks I'm Exploring</div>
                     <div class="skill-info">HTML, CSS, Git, TensorFlow</div>
                 </div>
                 <div class="skill-container">
@@ -78,6 +76,48 @@
                 </div>
             </div>
         </div>
+
+        <div class="leetcode-section" id="leetcode-section">
+            <div class="leetcode-inner">
+                <div class="leetcode-left">
+                    <div class="leetcode-label">Problem Solving</div>
+                    <div class="leetcode-heading">Sharpening Logic on <span style="color:#7a8572;">LeetCode</span></div>
+                    <div class="leetcode-text">I practice algorithmic thinking and data structures on LeetCode — tackling problems one at a time to strengthen my problem-solving foundation.</div>
+                    <a href="https://leetcode.com/u/Ritika_Attada2712/" target="_blank" class="leetcode-link-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;vertical-align:middle;flex-shrink:0;"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.396c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.396a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+                        View My LeetCode Profile
+                    </a>
+                </div>
+                <div class="leetcode-right">
+                    <div class="leetcode-card">
+                        <div class="lc-card-top">
+                            <div class="lc-avatar">RA</div>
+                            <div class="lc-user-info">
+                                <div class="lc-username">Ritika_Attada2712</div>
+                                <div class="lc-badge">Problem Solver</div>
+                            </div>
+                        </div>
+                        <div class="lc-divider"></div>
+                        <div class="lc-stats">
+                            <div class="lc-stat">
+                                <div class="lc-stat-dot easy-dot"></div>
+                                <span class="lc-stat-label">Easy</span>
+                            </div>
+                            <div class="lc-stat">
+                                <div class="lc-stat-dot medium-dot"></div>
+                                <span class="lc-stat-label">Medium</span>
+                            </div>
+                            <div class="lc-stat">
+                                <div class="lc-stat-dot hard-dot"></div>
+                                <span class="lc-stat-label">Hard</span>
+                            </div>
+                        </div>
+                        <a href="https://leetcode.com/u/Ritika_Attada2712/" target="_blank" class="lc-view-link">View full profile →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="development">
             <div class="head-dev">
                 <div class="heading-dev">Shaping Ideas Into Experiences: <span style="color:#7a8572;">My Creative Process</span></div>
@@ -85,27 +125,28 @@
             </div>
             <div class="cards">
                 <div class="card">
-                    <div class="card-logo"><image src="images/ideate.png" class="card-logo-img"></image></div>
+                    <div class="card-logo"><img src="images/ideate.png" class="card-logo-img" alt="Ideate"></div>
                     <div class="card-heading">Ideation: Thoughts Take Shape</div>
                     <div class="card-info">Every project begins with an idea.</div>
                 </div>
                 <div class="card">
-                    <div class="card-logo"><image src="images/development.png" class="card-logo-img"></image></div>
+                    <div class="card-logo"><img src="images/development.png" class="card-logo-img" alt="Development"></div>
                     <div class="card-heading">Development: From Ideas to Interface</div>
                     <div class="card-info">I bring structure to the idea, building with clarity and care.</div>
                 </div>
                 <div class="card">
-                    <div class="card-logo"><image src="images/deploy.png" class="card-logo-img"></image></div>
+                    <div class="card-logo"><img src="images/deploy.png" class="card-logo-img" alt="Deploy"></div>
                     <div class="card-heading">Deployment: Ready to Be Used</div>
                     <div class="card-info">The project takes its final shape and is gently shared.</div>
                 </div>
             </div>
         </div>
+
         <div class="projects" id="projects-section">
             <div class="projects-heading">Featured Projects</div>
             <div class="projects-subheading">A collection of my work</div>
             <div class="project-1">
-                <image img src="images/project-image3.png" class="project-image"></image>
+                <img src="images/project-image3.png" class="project-image" alt="Text Analyzer">
                 <div class="project-info">
                     <div class="p-info-left">
                         <div class="p-info-left-heading">Web Development</div>
@@ -115,13 +156,13 @@
                         </div>
                     </div>
                     <div class="p-info-right">
-                        <div class="p-info-right-info">Text-Analyzer is a sleek, real-time web app that tracks word, letter, vowel, and consonant counts as you type. It’s responsive, uses localStorage, and requires no setup to run.</div>
-                        <div class="p-info-right-link"><a href="https://ritikaattada.github.io/Text-Analyzer-/" class="project-link">Click here to view live</a></div>
+                        <div class="p-info-right-info">Text-Analyzer is a sleek, real-time web app that tracks word, letter, vowel, and consonant counts as you type. It's responsive, uses localStorage, and requires no setup to run.</div>
+                        <div class="p-info-right-link"><a href="https://ritikaattada.github.io/Text-Analyzer-/" class="project-link" target="_blank">Click here to view live</a></div>
                     </div>
                 </div>
             </div>
             <div class="project-1">
-                <image img src="images/project-image4.png" class="project-image"></image>
+                <img src="images/project-image4.png" class="project-image" alt="ML Project">
                 <div class="project-info">
                     <div class="p-info-left">
                         <div class="p-info-left-heading">Machine Learning</div>
@@ -134,36 +175,38 @@
                     </div>
                     <div class="p-info-right">
                         <div class="p-info-right-info">A simple linear regression model that predicts salary based on years of experience using a Kaggle dataset. Built with Python, trained in TensorFlow, and visualized with Matplotlib.</div>
-                        <div class="p-info-right-link"><a href="https://github.com/RitikaAttada/day10-of-ML/blob/main/one.ipynb" class="project-link">Click here</a></div>
+                        <div class="p-info-right-link"><a href="https://github.com/RitikaAttada/day10-of-ML/blob/main/one.ipynb" class="project-link" target="_blank">Click here</a></div>
                     </div>
                 </div>
             </div>
             <button class="view" id="view">View all</button>
         </div>
+
         <div class="collab">
             <div class="collab-heading">Let's <span style="color:#7a8572;">Collaborate</span> and Create</div>
             <div class="colab-right">
-                <div class="collab-info">I'm always happy to connect with fellow learners and builders.Whether you’re curious or just want to exchange ideas, I’d be glad to hear from you!</div>
+                <div class="collab-info">I'm always happy to connect with fellow learners and builders. Whether you're curious or just want to exchange ideas, I'd be glad to hear from you!</div>
                 <div class="colab-buttons">
-                    <a href="mailto:attadaritika@gmail.com?">
+                    <a href="mailto:attadaritika@gmail.com">
                         <button class="email">Email me</button>
                     </a>
-                    <button class="connect" id="linkedin-connect">Connect on Linkedin</button>
+                    <button class="connect" id="linkedin-connect">Connect on LinkedIn</button>
                 </div>
             </div>
         </div>
+
         <div class="footer">
             <div class="f-first">
-                <image src="images/logo.png" class="f-logo-img"></image>
+                <img src="images/logo.png" class="f-logo-img" alt="Logo">
             </div>
             <div class="f-second">
                 <div class="f-top">Quick Links</div>
                 <div class="f-bottom">
                     <div class="f-links" id="home-f">Home</div>
-                    <div class="f-links" id="about-f">about</div>
+                    <div class="f-links" id="about-f">About</div>
                     <div class="f-links" id="skills-f">Skills</div>
                     <div class="f-links" id="projects-f">Projects</div>
-                    <a href="mailto:attadaritika@gmail.com?" class="a">
+                    <a href="mailto:attadaritika@gmail.com" class="a">
                         <div class="f-links">Email</div>
                     </a>
                 </div>
@@ -171,12 +214,14 @@
             <div class="f-second">
                 <div class="f-top">Stay Connected</div>
                 <div class="f-bottom">
-                    <div class="f-links" id="linkedin-f">Linkedin</div>
-                    <div class="f-links" id="github-f">Github</div>
+                    <div class="f-links" id="linkedin-f">LinkedIn</div>
+                    <div class="f-links" id="github-f">GitHub</div>
                     <div class="f-links" id="insta-f">Instagram</div>
+                    <div class="f-links" id="leetcode-f">LeetCode</div>
                 </div>
             </div>
         </div>
+
         <script src="script.js"></script>
     </body>
 </html>
